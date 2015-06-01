@@ -1,0 +1,190 @@
+'.html.liquid':
+  'Liquid comment':
+    'prefix': 'com'
+    'body': """
+    {% comment %}
+      ${1}
+    {% endcomment %}
+    """
+
+'.html.liquid':
+  'Liquid raw':
+    'prefix': 'raw'
+    'body': """
+    {% raw %} ${1} {% endraw %}
+    """
+
+'.html.liquid':
+  'Liquid if':
+    'prefix': 'if'
+    'body': """
+    {% if ${1} %}
+      ${2}
+    {% endif %}
+    """
+
+'.html.liquid':
+  'Liquid if / elseif':
+    'prefix': 'ifelif'
+    'body': """
+    {% if ${1} %}
+      ${2}
+    {% elsif ${3} %}
+      ${4}
+    {% endif %}
+    """
+
+'.html.liquid':
+  'Liquid unless':
+    'prefix': 'unl'
+    'body': """
+    {% unless ${1} %}
+      ${2}
+    {% endunless %}
+    """
+
+'.html.liquid':
+  'Liquid unless (inline)':
+    'prefix': 'unlin'
+    'body': '{% unless ${1} %}${2}{% endunless %}'
+
+'.html.liquid':
+  'Liquid case':
+    'prefix': 'case'
+    'body': """
+    {% case ${1} %}
+      {% when ${2} %}
+        ${3}
+      {% else %}
+        ${4}
+    {% endcase %}
+    """
+
+'.html.liquid':
+  'Liquid cycle':
+    'prefix': 'cycle'
+    'body': """
+    {% cycle '${1}' %}
+    """
+
+'.html.liquid':
+  'Liquid for':
+    'prefix': 'for'
+    'body': """
+    {% for ${1} %}
+      ${2}
+    {% endfor %}
+    """
+
+'.html.liquid':
+  'Liquid tablerow':
+    'prefix': 'tabrow'
+    'body': """
+    {% tablerow ${1} %}
+      ${2}
+    {% endtablerow %}
+    """
+
+'.html.liquid':
+  'Liquid assign':
+    'prefix': 'ass'
+    'body': """
+    {% assign ${1} = ${2} %}
+    """
+
+'.html.liquid':
+  'Liquid capture':
+    'prefix': 'cap'
+    'body': """
+    {% capture ${1} %}
+    ${2}
+    {% endcapture %}
+    """
+
+'.html.liquid':
+  'Liquid include':
+    'prefix': 'inc'
+    'body': """
+    {% include "${1}" %}
+    """
+
+'.html.liquid':
+  'Liquid include with':
+    'prefix': 'incwith'
+    'body': """
+    {% include "${1}" with ${2} %}
+    """
+
+'.html.liquid':
+  'Liquid form':
+    'prefix': 'form'
+    'body': """
+    {% form '${1}', ${2} %}
+      ${3}
+    {% endform %}
+    """
+
+'.html.liquid':
+  'Liquid If Collection Products Size':
+    'prefix': 'ifcps'
+    'body': """
+    {% if collection.products.size > 0 %}
+      ${1}
+    {% endif %}
+    """
+
+'.html.liquid':
+  'Liquid for product in collection.products':
+    'prefix': 'forprodincp'
+    'body': """
+    {% for product in collection.products %}
+      ${1}
+    {% endfor %}
+    """
+
+'.html.liquid':
+  'Liquid paginate by':
+    'prefix': 'pagby'
+    'body': """
+    {% paginate ${1} by ${2} %}
+      ${3}
+    {% endpaginate %}
+    """
+
+'.html.liquid':
+  'Liquid stylesheet (remote)':
+    'prefix': 'cssrem'
+    'body': """
+    {{ "${1}" | stylesheet_tag }}
+    """
+
+'.html.liquid':
+  'Liquid stylesheet (local)':
+    'prefix': 'cssloc'
+    'body': """
+    {{ "${1}" | ${2}asset_url | stylesheet_tag }}
+    """
+
+'.html.liquid':
+  'Liquid script (remote)':
+    'prefix': 'cssrem'
+    'body': """
+    {{ "${1}" | script_tag }}
+    """
+
+'.html.liquid':
+  'Liquid script (local)':
+    'prefix': 'cssloc'
+    'body': """
+    {{ "${1}" | ${2}asset_url | script_tag }}
+    """
+
+'.html.liquid':
+  'Liquid number_of_comments':
+    'prefix': 'numcom'
+    'body': '{{ number_of_comments }}'
+
+'.html.liquid':
+  'Liquid replace':
+    'prefix': 'repl'
+    'body': " | replace: '${1:substring}', '${2:replacement}'"
