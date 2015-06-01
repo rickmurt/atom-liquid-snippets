@@ -2,13 +2,14 @@
   "name": "atom-liquid-snippets",
   "main": "./lib/atom-liquid-snippets",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Atom snippets for liquid (shopify) syntax",
   "keywords": [
+    "liquid", "shopify"
   ],
   "activationCommands": {
     "atom-workspace": "atom-liquid-snippets:toggle"
   },
-  "repository": "https://github.com/atom/atom-liquid-snippets",
+  "repository": "https://github.com/rickmurt/atom-liquid-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
