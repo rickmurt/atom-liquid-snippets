@@ -8,13 +8,13 @@
     'body': '{{ number_of_comments }}'
 
   'Liquid script (local)':
-    'prefix': 'cssloc'
+    'prefix': 'jsloc'
     'body': """
     {{ "${1}" | ${2}asset_url | script_tag }}
     """
 
   'Liquid script (remote)':
-    'prefix': 'cssrem'
+    'prefix': 'jsrem'
     'body': """
     {{ "${1}" | script_tag }}
     """
@@ -165,3 +165,163 @@
       ${1}
     {% endcomment %}
     """
+
+  'Liquid product.id':
+    'prefix': 'prodid'
+    'body': '{{ product.id }}'
+
+  'Liquid product.title':
+    'prefix': 'prodtitle'
+    'body': '{{ product.title }}'
+
+  'Liquid product.handle':
+    'prefix': 'prodhandle'
+    'body': '{{ product.handle }}'
+
+  'Liquid product.type':
+    'prefix': 'prodtype'
+    'body': '{{ product.type }}'
+
+  'Liquid product.vendor':
+    'prefix': 'prodvendor'
+    'body': '{{ product.vendor }}';
+
+  'Liquid product.price':
+    'prefix': 'prodprice'
+    'body': '{{ product.price }}'
+
+  'Liquid product.price_min':
+    'prefix': 'prodpricemin'
+    'body': '{{ product.price_min }}'
+
+  'Liquid product.compare_at_price_min':
+    'prefix': 'prodcapmin'
+    'body': '{{ product.compare_at_price_min }}'
+
+  'Liquid product.price_max':
+    'prefix': 'prodpricemax'
+    'body': '{{ product.price_max }}'
+
+  'Liquid product.compare_at_price_max':
+    'prefix': 'prodcapmax'
+    'body': '{{ product.compare_at_price_max }}'
+
+  'Liquid product.price_varies':
+    'prefix': 'productpv'
+    'body': '{{ product.price_varies }}'
+
+  'Liquid product.compare_at_price_varies':
+    'prefix': 'productcapvar'
+    'body': '{{ product.compare_at_price_varies }}'
+
+  'Liquid product.url':
+    'prefix': 'produrl'
+    'body': '{{ product.url }}'
+
+  'Liquid product.featured_image':
+    'prefix': 'prodfeat'
+    'body': '{{ product.featured_image }}'
+
+  'Liquid product.images':
+    'prefix': 'prodimages'
+    'body': '{{ product.images }}'
+
+  'Liquid product.description':
+    'prefix': 'proddesc'
+    'body': '{{ product.description }}'
+
+  'Liquid product.content':
+    'prefix': 'prodcont'
+    'body': '{{ product.content }}'
+
+  'Liquid product.variants':
+    'prefix': 'prodvar'
+    'body': '{{ product.variants }}'
+
+  'Liquid product.available':
+    'prefix': 'prodavail'
+    'body': '{{ product.available }}'
+
+  'Liquid product.template_suffix':
+    'prefix': 'prodtempsuf'
+    'body': '{{ product.template_suffix }}'
+
+  'Liquid product.selected_variant':
+    'prefix': 'prodselvar'
+    'body': '{{ product.selected_variant }}'
+
+  'Liquid product.selected_or_first_available_variant':
+    'prefix': 'prodselorfirstvar'
+    'body': '{{ product.selected_or_first_available_variant }}'
+
+  'Liquid product.collections':
+    'prefix': 'prodcols'
+    'body': '{{ product.collections }}'
+
+  'Liquid product.tags':
+    'prefix': 'prodtags'
+    'body': '{{ product.tags }}'
+
+  'Liquid product.options':
+    'prefix': 'prodopts'
+    'body': '{{ product.options }}'
+
+  'Liquid collection.id':
+    'prefix': 'colid'
+    'body': '{{ collection.id }}'
+
+  'Liquid collection.title':
+    'prefix': 'coltitle'
+    'body': '{{ collection.title }}'
+
+  'Liquid collection.handle':
+    'prefix': 'colhandle'
+    'body': '{{ collection.handle }}'
+
+  'Liquid collection.description':
+    'prefix': 'coldesc'
+    'body': '{{ collection.description }}'
+
+  'Liquid collection.all_types':
+    'prefix': 'colalltypes'
+    'body': '{{ collection.all_types }}'
+
+  'Liquid collection.all_vendors':
+    'prefix': 'colallvendors'
+    'body': '{{ collection.all_vendors }}'
+
+  'Liquid collection.products':
+    'prefix': 'colprods'
+    'body': '{{ collection.products }}'
+
+  'Liquid collection.products_count':
+    'prefix': 'colprodscount'
+    'body': '{{ collection.products_count }}'
+
+  'Liquid collection.all_products':
+    'prefix': 'colallprods'
+    'body': '{{ collection.all_products }}'
+
+  'Liquid collection.all_products_count':
+    'prefix': 'colallprodscount'
+    'body': '{{ collections.all_products_count }}'
+
+  'Liquid collection.tags':
+    'prefix': 'coltags'
+    'body': '{{ collection.tags }}'
+
+  'Liquid collection.all_tags':
+    'prefix': 'colalltags'
+    'body': '{{ collection.all_tags }}'
+
+  'Liquid collection.next_product':
+    'prefix': 'colnextprod'
+    'body': '{{ collection.next_product }}'
+
+  'Liquid collection.previous_product':
+    'prefix': 'colprevprod'
+    'body': '{{ collection.previous_product }}'
+
+  'Liquid collection.url':
+    'prefix': 'colurl'
+    'body': '{{ collection.url }}'
