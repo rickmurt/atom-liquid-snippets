@@ -1,7 +1,7 @@
 {
   "name": "atom-liquid-snippets",
   "main": "./lib/atom-liquid-snippets",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Atom snippets for liquid (shopify) syntax",
   "keywords": [
     "liquid",
